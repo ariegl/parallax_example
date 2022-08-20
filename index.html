@@ -22,11 +22,54 @@
         <img src="img/moon.png" alt="" id="moon">
         <img src="img/mountains_behind.png" alt="" id="mountains_behind">
         <h2 id="text">Moon Light</h2>
-        <a href="#" id="btn">Explore</a>
+        <a href="#sec" id="btn">Explore</a>
         <img src="img/mountains_front.png" alt="" id="mountains_front">
     </section>
-    <div class="sec">
+    <div class="sec" id="sec">
         <h2>Parallax Scrolling Effects</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus fugiat obcaecati voluptas temporibus culpa reprehenderit totam ex soluta a vitae maxime animi molestias velit possimus mollitia ducimus tempora, ab doloribus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores dignissimos exercitationem amet error beatae? Accusantium possimus modi eius dignissimos repellendus consequatur non optio perferendis. Quia quisquam fugiat ipsa magnam aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium tempora alias quasi quia sed expedita temporibus, dolorem unde at saepe eos perferendis nisi? Iusto, molestiae quaerat facilis in asperiores labore!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis consequatur est consequuntur fugit, perspiciatis tempora in expedita, deleniti ab beatae laboriosam libero pariatur ratione explicabo, fuga debitis quo quisquam nobis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos distinctio fugiat minima atque voluptatibus ratione, sed a quidem nostrum voluptate repudiandae, repellat facilis odio. Consequatur quia ex delectus quos.<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad qui minima fuga unde perferendis hic expedita quae quas cum error similique distinctio voluptate, sed quaerat quod. Assumenda quibusdam ratione suscipit!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officia sequi natus culpa dignissimos pariatur ea maxime eaque, vitae voluptatum optio veritatis modi iusto quis veniam error soluta. Sed, facilis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad laborum itaque, dignissimos quam possimus officia autem excepturi fugiat at reprehenderit maiores perspiciatis ex quidem nemo odio assumenda commodi quas laboriosam.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptate accusamus quasi atque nobis laboriosam delectus beatae maxime saepe dolor reprehenderit, eaque vel laborum, dicta at molestias ipsam quae quam?<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque dolorem libero unde sit quia placeat tempora perferendis velit harum! Culpa iste blanditiis adipisci cupiditate soluta totam atque error unde?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maxime cum laboriosam animi corporis dolorum fugit quis saepe quo nam sequi error facilis laborum et repellendus quae, labore ea dolorem.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis veniam dolorem ullam dicta iusto libero, soluta quis ipsum aliquam impedit aperiam ab facilis deserunt, qui laboriosam! Vitae consequatur nisi odio.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, reiciendis quisquam aliquam, quia velit sequi odio quaerat minima hic nostrum vel, eius vitae quasi asperiores modi voluptates at blanditiis quibusdam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad laborum itaque, dignissimos quam possimus officia autem excepturi fugiat at reprehenderit maiores perspiciatis ex quidem nemo odio assumenda commodi quas laboriosam.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptate accusamus quasi atque nobis laboriosam delectus beatae maxime saepe dolor reprehenderit, eaque vel laborum, dicta at molestias ipsam quae quam?<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque dolorem libero unde sit quia placeat tempora perferendis velit harum! Culpa iste blanditiis adipisci cupiditate soluta totam atque error unde?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maxime cum laboriosam animi corporis dolorum fugit quis saepe quo nam sequi error facilis laborum et repellendus quae, labore ea dolorem.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis veniam dolorem ullam dicta iusto libero, soluta quis ipsum aliquam impedit aperiam ab facilis deserunt, qui laboriosam! Vitae consequatur nisi odio.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, reiciendis quisquam aliquam, quia velit sequi odio quaerat minima hic nostrum vel, eius vitae quasi asperiores modi voluptates at blanditiis quibusdam.
+        </p>
     </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 2.5 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
 </body>
 </html>
